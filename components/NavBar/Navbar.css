@@ -118,3 +118,120 @@
 .IMG{
     background-color: transparent;
 }
+
+/* Search Bar Menu styles */
+
+.ContPrin{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1E213A;
+}
+
+.FirstSec{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1E213A;
+}
+
+.ImCont{
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+}
+
+.ImCont img{
+    background-color: transparent;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/*  */
+
+.SecondSec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E213A;
+    gap: .5rem;
+    margin: 1rem;
+}
+
+.Clbtn{
+    display: flex;
+    border: 1px solid #E7E7EB;
+    background-color: #1E213A;
+    width: 15rem;
+
+}
+
+.searchImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E213A;
+    height: 3rem;
+    width: 3.5rem;
+}
+
+.searchImg>img{
+    background-color: #1E213A;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+
+.btn2{
+    background-color: #3C47E9;
+    width: 5.3rem;
+    height: 3.3rem;
+    color:#E7E7EB;
+    font-weight: 600;
+}
+
+input{
+    appearance: none;
+    border: none;
+    background-color:#1E213A;
+    width: 100%;
+}
+
+/*  */
+
+.ThirdSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #1E213A;
+    height: 18rem;
+
+}
+
+.letra{
+    color: #E7E7EB;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E7E7EB;
+    margin: 0 1rem;
+    padding: 1rem 0;
+    background-color: transparent;
+}
+
+.sp{
+    display: none;
+}
+
+/* It did not work / pending */
+
+.sp.active:hover{
+    display: block;
+    color: #616475;
+}

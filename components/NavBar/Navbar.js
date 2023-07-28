@@ -1,5 +1,41 @@
 import "./Navbar.css"
 
+function Search (){
+
+    return(
+        <div className="ContPrin">
+            <section className="FirstSec">
+                <div className="ImCont"><img src="./close.svg" alt="image" /></div>
+            </section>
+            {/* Second section for the search menu */}
+            <section className="SecondSec">
+                <div className="Clbtn">
+                    <div className="searchImg">
+                        <img src="./search1.svg" alt="image" /> 
+                    </div>
+                    <input type="text" placeholder="search location"/>
+                </div>
+                <button className="btn2">Search</button>
+            </section>
+            {/* Third section for the search menu */}
+            <section className="ThirdSec">
+                <div className="div">
+                    <p className="letra">London</p>
+                    <span className="sp active"> &gt; </span>                    
+                </div>
+                <div className="div">
+                    <p className="letra">Barcelona</p>
+                    <span className="sp active"> &gt; </span>
+                </div>
+                <div className="div">
+                    <p className="letra">Long Beach</p>
+                    <span className="sp active"> &gt; </span>
+                </div>
+            </section>
+        </div>
+    )
+}
+
 
 
 function Navbar() {
@@ -39,8 +75,8 @@ function Navbar() {
             </section>
         </div>
         {/* Section for the Search menu */}
-        <div>
-
+        <div className="mainCont">
+            <Search/>
         </div>
     </div>
   )
