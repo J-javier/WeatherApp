@@ -1,0 +1,120 @@
+.mainCont{
+    background-color: #1E213A;
+    height: 100vh;
+    width: 100%;
+}
+/* This is for the search button and log */
+.Location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1E213A;
+    padding: 1rem 1rem;
+}
+
+.btn{
+    background-color: #6E707A;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #E7E7EB;
+    width: 45%;
+    height: 2.5rem;
+}
+
+.containerLogo{
+    border-radius: 25px;
+    background-color: #6E707A;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LImagen{
+    background-color: transparent;
+}
+
+.principalImg{
+    background-image: linear-gradient(rgba(30,33,58,0.9), rgba(30,33,58,0.9)),url("/Cloud-background.png") ;
+    background-position: center;
+    background-size: 32rem 20rem;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    background-color: #1E213A;
+}
+
+.ImagenCont{
+    width: 11rem;
+    height: 11rem;
+    background-color: transparent;
+}
+
+.IPrin{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* SECOND SECTION */
+.SecondSection{
+    display: flex;
+    background-color: #1E213A;
+    flex-direction: column;
+    align-items: center;
+    height: 21rem;
+    justify-content: space-between;
+}
+
+.letter{
+    color: #A09FB1;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.Ftitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.letter.title{
+    font-weight: 500;
+    font-size: 8rem;
+    background-color: transparent;
+    color: white;
+}
+
+.letter.grados{
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+
+.letter.subtitle{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.information{
+    display: flex;
+    background-color: transparent;
+    gap: .5rem;
+}
+
+
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    background-color: transparent;
+}
+
+.IMG{
+    background-color: transparent;
+}
