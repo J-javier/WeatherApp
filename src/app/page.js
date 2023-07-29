@@ -1,3 +1,4 @@
+import Card from "../../components/Card/Card";
 import Navbar from "../../components/NavBar/Navbar";
 
 
@@ -10,7 +11,13 @@ export default function Home() {
       </div>
       {/* Cards for the weather */}
       <div>
-        </div>   
+        <div>
+          <Card/>
+        </div>
+        <div>
+          
+        </div>
+      </div>   
     </main>
   )
 }
