@@ -1,11 +1,14 @@
+'use client'
+
+import { useState } from "react"
 import "./Navbar.css"
 
-function Search (){
+function Search ({handleChange}){
 
     return(
         <div className="ContPrin">
             <section className="FirstSec">
-                <div className="ImCont"><img src="./close.svg" alt="image" /></div>
+                <div className="ImCont" onClick={handleChange} ><img src="./close.svg" alt="image" /></div>
             </section>
             {/* Second section for the search menu */}
             <section className="SecondSec">
@@ -19,7 +22,7 @@ function Search (){
             </section>
             {/* Third section for the search menu */}
             <section className="ThirdSec">
-                <div className="div">
+                <div className="div ">
                     <p className="letra">London</p>
                     <span className="sp active"> &gt; </span>                    
                 </div>
@@ -36,17 +39,25 @@ function Search (){
     )
 }
 
-
+ 
 
 function Navbar() {
+    const [ content, setContent] = useState(true);
+
+    function handleChange (){
+        setContent(!content)
+    }
+
   return (
     <div className="mainCont">
         {/* Section for the first view */}
+        { content ? ( 
+                <>
         <div >
             {/* Search button and geo logo */}
             <section>
                 <div className="Location">
-                    <button className="btn">Search for places</button>
+                    <button className="btn" onClick={handleChange}>Search for places</button>
                     <div className="containerLogo"><img src="./location.svg" alt="image" className="LImagen" /></div>
                 </div>
                 <div className="principalImg">
@@ -74,10 +85,16 @@ function Navbar() {
 
             </section>
         </div>
-        {/* Section for the Search menu */}
+
+        </>
+        
+        ) : ( 
+            <> 
         <div className="mainCont">
-            <Search/>
-        </div>
+            <Search handleChange={handleChange} />
+        </div> 
+        </>
+        ) }
     </div>
   )
 }
