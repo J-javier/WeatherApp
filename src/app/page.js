@@ -1,3 +1,4 @@
+import Block from "../../components/Block/Block";
 import Card from "../../components/Card/Card";
 import Navbar from "../../components/NavBar/Navbar";
 
@@ -15,7 +16,7 @@ export default function Home() {
           <Card/>
         </div>
         <div>
-          
+          <Block/>
         </div>
       </div>   
     </main>
