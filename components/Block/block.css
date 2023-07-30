@@ -23,6 +23,7 @@
 .PrincipalContenedorCards{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -46,6 +47,19 @@
     margin: 2rem 0;
 }
 
+/* styles for the tittle */
+
+.TitulocardBlock{
+    display: flex;
+    justify-content: flex-start;
+    width: 85%;
+}
+
+.TitulocardBlock >h2{
+    color: #E7E7EB ;
+    font-weight: 700;
+    text-align: left;
+}
 
 /* styles for the first two blocks */
 
@@ -141,5 +155,43 @@
     height: 11rem;
 }
 
+/* RESPONSIVE DESIGN */
 
+@media screen and (min-width: 1024px) {
+    .PrincipalContenedorCards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .pruebaCard{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        gap: 3rem;
+        margin: 0;
+    }
+
+    .TitulocardBlock{
+        width: 100%;
+        padding: 0 0 1.5rem 1.8rem;
+    }
+
+
+
+    .TwoBlock{
+        width: 43%;
+        height: 10rem;
+    }
+
+    .LastBlock{
+        width: 43%;
+        height: 9rem;
+    }
+}
 

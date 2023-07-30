@@ -5,6 +5,9 @@ import React from 'react'
 function Block() {
   return (
     <div className="PrincipalContenedorCards">
+        <div className="TitulocardBlock">
+            <h2>Today's Hightlights</h2>
+        </div>
         <div className="pruebaCard">
             <section className="TwoBlock">
                 <h3 className="Titulos">Wind status</h3>

@@ -28,7 +28,7 @@ export default function Home() {
         <div className="DivCardspage">
           <Card/>
         </div>
-        <div>
+        <div className="DivBlockpage">
           <Block/>
         </div>
       </div>   
