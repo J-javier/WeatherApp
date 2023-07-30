@@ -70,6 +70,19 @@
 
 /* Botones para los grados */
 
-.GradosOpt{
-    display: none;
+
+
+/* Responsive Design  */
+
+@media screen and (min-width: 1024px) {
+    .mainContainerCard{
+        width: 100%;
+        display: flex;
+        padding: 2rem 0;
+    }
+
+    .ContenedorCard{
+        width: 15%;
+    }
+    
 }

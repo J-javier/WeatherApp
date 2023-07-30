@@ -7,3 +7,63 @@
     background-color: #100E1D;
     font-family: 'Raleway', sans-serif;
 }
+
+
+.GradosOpt{
+    display: none;
+}
+
+
+@media screen and ( min-width: 1024px){
+    .MainContainerPage{
+        display: flex;
+        width: 100%;
+        
+    }
+    
+    .ContenedorNavBarPage{
+        width: 30%;
+    }
+
+    .ContenedorInformationPage{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .contBotones{
+        width: 85%;
+    }
+
+    .GradosOpt{
+        display: flex;
+        gap: .5rem;
+        justify-content: flex-end;
+    }
+
+    .GradosOpt button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        width: 2.3rem;
+        height: 2.3rem;
+        background-color: #585676;
+        color:#E7E7EB;
+        font-weight: 700;
+    }
+
+    .GradosOpt button:hover{
+        background-color: #E7E7EB ;
+        color: #110E3C;
+        font-weight: 700;
+    }
+
+    .DivCardspage{
+        width: 85%;
+    }
+
+
+}
