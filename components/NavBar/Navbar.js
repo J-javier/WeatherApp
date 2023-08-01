@@ -102,7 +102,7 @@ function Navbar({weatherData, weatherData2 , onSearch}) {
                 <div className="principalImg">
                     <div className="ImagenCont">
 
-                        <img src="./lightCloud.png" alt="image" className="IPrin" />
+                        <img src="./LightCloud.png" alt="image" className="IPrin" />
                     </div>
                 </div>
             </section>
