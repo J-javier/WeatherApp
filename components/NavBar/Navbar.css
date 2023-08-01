@@ -123,6 +123,10 @@
 
 /* Search Bar Menu styles */
 
+.busqueda{
+    color: white;
+}
+
 .ContPrin{
     display: flex;
     flex-direction: column;

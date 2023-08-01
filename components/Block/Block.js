@@ -2,9 +2,12 @@ import "./block.css"
  
 import React from 'react'
 
-function Block() {
+function Block({weatherData}) {
   return (
+
     <div className="PrincipalContenedorCards">
+    {weatherData && ( <> 
+
         <div className="TitulocardBlock">
             <h2>Today's Hightlights</h2>
         </div>
@@ -12,7 +15,7 @@ function Block() {
             <section className="TwoBlock">
                 <h3 className="Titulos">Wind status</h3>
                 <div className="medidasCard">
-                    <h1 className="Numeros">7</h1>
+                    <h1 className="Numeros">{weatherData.wind.speed.toFixed()}</h1>
                     <h2 className="Measured">mph</h2>
                 </div>
                 <div className="medidasCard one">
@@ -23,7 +26,7 @@ function Block() {
             <section className="TwoBlock">
                 <h3 className="Titulos">Humidity</h3>
                 <div className="medidasCard">
-                    <h1 className="Numeros">84</h1>
+                    <h1 className="Numeros">{weatherData.main.humidity}</h1>
                     <h2 className="Measured">%</h2>
                 </div>
                 <div className="medidasCard barra">
@@ -43,19 +46,22 @@ function Block() {
             <section className="LastBlock">
                 <h3 className="Titulos">Visibility</h3>
                 <div className="medidasCard">
-                    <h1 className="Numeros">6,4 </h1>
+                    <h1 className="Numeros">{weatherData.visibility/1000}</h1>
                     <h2 className="Measured"> miles</h2>
                 </div>
             </section>
             <section className="LastBlock">
                 <h3 className="Titulos">Air Pressure</h3>
                 <div className="medidasCard">
-                    <h1 className="Numeros">998</h1>
+                    <h1 className="Numeros">{weatherData.main.pressure}</h1>
                     <h2 className="Measured">mb</h2>
                 </div>
             </section>
         </div>
+        </>)}
     </div>
+
+    
   )
 }
 
