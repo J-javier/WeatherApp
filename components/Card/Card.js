@@ -5,30 +5,17 @@ import React, { useState , useEffect } from "react";
 
 function Card({ weatherData2 }) {
 
-    if (!weatherData2 || !weatherData2.list) {
-        return "Loading..."; 
-      }
     
-/*       // Filtrar los pronósticos de los próximos 5 días
-      const forecastForNext5Days = weatherData2.list
-        .filter((item, index) => index % 8 === 0)
-        .slice(0, 5);
 
-  // Obtener la temperatura máxima y mínima de cada día
-  const forecastDataForCards = forecastForNext5Days.map((forecastItem) => ({
-    date: formatDate(forecastItem.dt_txt),
-    maxTemp: forecastItem.main.temp_max.toFixed(0),
-    minTemp: forecastItem.main.temp_min.toFixed(0),
-    weatherIcon: forecastItem.weather[0].icon,
-  }));
-   */
-  // this is just a test to get differentinformation for the forecast 
     
   const [forecastData, setForecastData] = useState([]);
 
   useEffect(() => {
     // Filtrar los datos para obtener las cards de hoy y los próximos 4 días
-    const today = new Date();
+    if (weatherData2 && weatherData2.list) {
+       
+
+  const today = new Date();
   today.setHours(0, 0, 0, 0);
 
   const tomorrow = new Date(today);
@@ -43,6 +30,8 @@ function Card({ weatherData2 }) {
     console.log(nextFiveDaysData)
 
     setForecastData(nextFiveDaysData);
+  } 
+  
   }, [weatherData2]);
    
 
