@@ -4,9 +4,6 @@ import React, { useState , useEffect } from "react";
 
 
 function Card({ weatherData2 }) {
-
-    
-
     
   const [forecastData, setForecastData] = useState([]);
 
@@ -22,9 +19,9 @@ function Card({ weatherData2 }) {
   tomorrow.setDate(tomorrow.getDate() + 1);
 
   const nextFiveDaysData = weatherData2.list.filter((item) => {
-    const itemDate = new Date(item.dt * 1000); // Convertir el timestamp a fecha
+    const itemDate = new Date(item.dt * 1000); // Convertir el time a fecha
     itemDate.setHours(0, 0, 0, 0);
-    return itemDate >= tomorrow && itemDate <= new Date(tomorrow.getTime() + 4 * 24 * 60 * 60 * 1000); // 5 días en milisegundos
+    return itemDate >= tomorrow && itemDate <= new Date(tomorrow.getTime() + 4 * 24 * 60 * 60 * 1000); 
   });
   
     console.log(nextFiveDaysData)

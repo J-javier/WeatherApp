@@ -2,7 +2,10 @@ import "./block.css"
  
 import React from 'react'
 
-function Block({weatherData}) {
+function Block({weatherData}) { 
+
+    const humidityPercentage = (weatherData?.main?.humidity) ;
+
   return (
 
     <div className="PrincipalContenedorCards">
@@ -36,7 +39,7 @@ function Block({weatherData}) {
                         <p className="par">100</p>
                     </div>
                     <div className="contBarrita">
-                        <div className="barritaColor"></div>
+                        <div className="barritaColor" style={{ width: `${humidityPercentage}%`} }></div>
                     </div>
                     <div className="porcentajeHumidity">
                         <p className="par">%</p>

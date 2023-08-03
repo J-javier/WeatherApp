@@ -56,15 +56,15 @@ function Search({ handleChange , handleSearch, setReenderizado}) {
       {/* Third section for the search menu */}
       <section className="ThirdSec">
         <div className="div ">
-          <p className="letra" value="London">London</p>
+          <p className="letra" value="London" >London</p>
           <span className="sp active"> &gt; </span>
         </div>
         <div className="div">
-          <p className="letra" value="Barcelona">Barcelona</p>
+          <p className="letra" value="Barcelona" >Barcelona</p>
           <span className="sp active"> &gt; </span>
         </div>
         <div className="div">
-          <p className="letra" value="Long Beach">Long Beach</p>
+          <p className="letra" value="Long Beach" >Long Beach</p>
           <span className="sp active"> &gt; </span>
         </div>
       </section>
